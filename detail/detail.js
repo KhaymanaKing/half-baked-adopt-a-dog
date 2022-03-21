@@ -6,9 +6,9 @@ const dogDetailContainer = document.getElementById('dog-detail-container');
 window.addEventListener('load', async() => {
     const data = new URLSearchParams(window.location.search);
 
-    const id = data.get('id');
+    const dogId = data.get('id');
 
-    const dog = await getDog(id);
+    const dog = await getDog(dogId);
 
     const dogDetailEl = renderDogDetail(dog);
     dogDetailContainer.append(dogDetailEl);

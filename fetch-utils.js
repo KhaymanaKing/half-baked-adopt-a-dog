@@ -17,7 +17,7 @@ export async function getDog(id) {
     const response = await client
         .from ('dogs')
         .match({ id: id })
-        .select ('*');
+        .select ();
     // and return the response (checking for errors)
     return checkError(response);    
 }
