@@ -1,9 +1,13 @@
 import { getDogs } from './fetch-utils.js';
 import { renderDogCard } from './render-utils.js';
+// import { dogSearch } from './fetch-utils.js';
 
+// const form = document.querySelector('form');
 const dogListContainer = document.getElementById('dog-list-container');
 
 // on load
+
+
 window.addEventListener('load', async() => {
     const dogs = await getDogs();
 
@@ -15,5 +19,5 @@ window.addEventListener('load', async() => {
         console.log(dogs);
     }
 });
-// fetch all dogs
-// render and append all dog cards to the container
+
+
